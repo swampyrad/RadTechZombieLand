@@ -1,0 +1,3 @@
+//Spawner Toggle
+
+server bool ZombieApocalypse_Enabled = false;
