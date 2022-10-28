@@ -6,44 +6,34 @@ override void CheckReplacement( ReplaceEvent Melee ){
 
  if ((ZombieApocalypse_Enabled)) switch ( Melee.Replacee.GetClassName() ) {
 
-    case 'Zombieman'  :  if(!random(0,5))Melee.Replacement = "Babuin";
-       					       else Melee.Replacement = "MeleeZombie";
+    case 'Zombieman'    :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'ShotgunGuy'  :  if(!random(0,9))Melee.Replacement = "RiotCopZombie";
-       					    else Melee.Replacement = "BrawlerJackboot";
+    case 'ShotgunGuy'   :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'ChaingunGuy'  :  if(!random(0,5))Melee.Replacement = "RiotCopZombie";
-       					         else Melee.Replacement = "Babuin";
+    case 'ChaingunGuy'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'DoomImp'  :  Melee.Replacement = "RiotCopZombie";
-       	//all imps are bastards
+    case 'DoomImp'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'Cacodemon'  :  if(!random(0,3))Melee.Replacement = "RiotCopZombie";
-       						 else Melee.Replacement = "LostSoul";
+    case 'Cacodemon'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'PainElemental'  :  if(!random(0,3))Melee.Replacement = "RiotCopZombie";
-       							 else Melee.Replacement = "LostSoul";
+    case 'PainElemental'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'Arachnotron'  :  if(!random(0,1))Melee.Replacement = "NinjaPirate";
-       					          else Melee.Replacement = "RiotCopZombie";
+    case 'Arachnotron'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'Mancubus'  :  if(!random(0,1))Melee.Replacement = "NinjaPirate";
-       					                else Melee.Replacement = "RiotCopZombie";
+    case 'Mancubus'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'HellKnight'  :  if(!random(0,1))Melee.Replacement = "NinjaPirate";
-       					                  else Melee.Replacement = "RiotCopZombie";
+    case 'HellKnight'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'Archvile'  :  if(!random(0,1))Melee.Replacement = "PainBringer";
-       					                else Melee.Replacement = "NinjaPirate";
+    case 'Archvile'  :  Melee.Replacement = "MeleeZombie";
         break;
 
     //does not replace boss monsters, which includes Barons of Hell,
