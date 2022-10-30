@@ -24,10 +24,16 @@ override void CheckReplacement( ReplaceEvent Melee ){
     case 'PainElemental'  :  Melee.Replacement = "MeleeZombie";
         break;
 
+    case 'LostSoul'  :  Melee.Replacement = "MeleeZombie";
+        break;
+
     case 'Arachnotron'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'Mancubus'  :  Melee.Replacement = "MeleeZombie";
+    case 'Fatso'  :  Melee.Replacement = "MeleeZombie";
+        break;
+
+    case 'Revenant'  :  Melee.Replacement = "MeleeZombie";
         break;
 
     case 'HellKnight'  :  Melee.Replacement = "MeleeZombie";
