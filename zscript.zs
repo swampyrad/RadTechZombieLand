@@ -4,7 +4,7 @@ class MeleeMonster_Spawner : EventHandler{
 
 override void CheckReplacement( ReplaceEvent Melee ){
 
- if ((ZombieApocalypse_Enabled)) switch ( Melee.Replacee.GetClassName() ) {
+ if ((ZombieLand_Enabled)) switch ( Melee.Replacee.GetClassName() ) {
 
     case 'Zombieman'    :  Melee.Replacement = "MeleeZombie";
         break;
@@ -15,35 +15,41 @@ override void CheckReplacement( ReplaceEvent Melee ){
     case 'ChaingunGuy'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'DoomImp'  :  Melee.Replacement = "MeleeZombie";
+    case 'DoomImp'      :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'Cacodemon'  :  Melee.Replacement = "MeleeZombie";
+    case 'Cacodemon'    :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'PainElemental'  :  Melee.Replacement = "MeleeZombie";
+    case 'PainElemental':  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'LostSoul'  :  Melee.Replacement = "MeleeZombie";
+    case 'LostSoul'     :  Melee.Replacement = "MeleeZombie";
         break;
 
     case 'Arachnotron'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'Fatso'  :  Melee.Replacement = "MeleeZombie";
+    case 'Fatso'        :  Melee.Replacement = "Babuin";
         break;
 
-    case 'Revenant'  :  Melee.Replacement = "MeleeZombie";
+    case 'Revenant'     :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'HellKnight'  :  Melee.Replacement = "MeleeZombie";
+    case 'HellKnight'   :  Melee.Replacement = "Babuin";
         break;
 
-    case 'Archvile'  :  Melee.Replacement = "MeleeZombie";
+    case 'Archvile'     :  Melee.Replacement = "Babuin";
         break;
 
-    //does not replace boss monsters, which includes Barons of Hell,
-    //Cyberdemons, and Spider Masterminds
+    case 'BaronOfHell'      :  if(ZombieLand_NoBosses)Melee.Replacement = "NinjaPirate";
+        break;
+        
+    case 'Cyberdemon'       :  if(ZombieLand_NoBosses)Melee.Replacement = "Boner";
+        break;
+        
+    case 'SpiderMastermind':  if(ZombieLand_NoBosses)Melee.Replacement = "VulcanetteZombie";
+        break;
     }
 
     Melee.IsFinal = false;

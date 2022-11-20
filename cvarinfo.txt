@@ -1,3 +1,4 @@
 //Spawner Toggle
 
-server bool ZombieApocalypse_Enabled = false;
+server bool ZombieLand_Enabled = false;
+server bool ZombieLand_NoBosses= false;

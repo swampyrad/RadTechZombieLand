@@ -1,3 +1,6 @@
 AddOptionMenu "OptionsMenu" 
-{Option "Enable Zombieland Mode", "ZombieApocalypse_Enabled", "OnOff"}
+{Option "Zombieland Mode", "ZombieLand_Enabled", "OnOff"
+ Option "Replace Bosses", "ZombieLand_NoBosses", "OnOff"
+}
+
 
