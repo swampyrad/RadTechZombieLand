@@ -18,6 +18,12 @@ override void CheckReplacement( ReplaceEvent Melee ){
     case 'DoomImp'      :  Melee.Replacement = "MeleeZombie";
         break;
 
+    case 'Demon'    :  Melee.Replacement = "MeleeZombie";
+        break;
+
+    case 'Spectre'    :  Melee.Replacement = "MeleeZombie";
+        break;
+
     case 'Cacodemon'    :  Melee.Replacement = "MeleeZombie";
         break;
 
@@ -30,25 +36,25 @@ override void CheckReplacement( ReplaceEvent Melee ){
     case 'Arachnotron'  :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'Fatso'        :  Melee.Replacement = "Babuin";
+    case 'Fatso'        :  Melee.Replacement = "MeleeZombie";
         break;
 
     case 'Revenant'     :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'HellKnight'   :  Melee.Replacement = "Babuin";
+    case 'HellKnight'   :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'Archvile'     :  Melee.Replacement = "Babuin";
+    case 'Archvile'     :  Melee.Replacement = "MeleeZombie";
         break;
 
-    case 'BaronOfHell'      :  if(ZombieLand_NoBosses)Melee.Replacement = "NinjaPirate";
+    case 'BaronOfHell'      :  if(ZombieLand_NoBosses)Melee.Replacement = "MeleeZombie";
         break;
         
-    case 'Cyberdemon'       :  if(ZombieLand_NoBosses)Melee.Replacement = "Boner";
+    case 'Cyberdemon'       :  if(ZombieLand_NoBosses)Melee.Replacement = "MeleeZombie";
         break;
         
-    case 'SpiderMastermind':  if(ZombieLand_NoBosses)Melee.Replacement = "VulcanetteZombie";
+    case 'SpiderMastermind':  if(ZombieLand_NoBosses)Melee.Replacement = "MeleeZombie";
         break;
     }
 
