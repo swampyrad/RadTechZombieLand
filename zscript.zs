@@ -48,6 +48,9 @@ override void CheckReplacement( ReplaceEvent Melee ){
     case 'Archvile'     :  Melee.Replacement = "MeleeZombie";
         break;
 
+    case 'WolfensteinSS'     :  Melee.Replacement = "MeleeZombie";
+        break;
+
     case 'BaronOfHell'      :  if(ZombieLand_NoBosses)Melee.Replacement = "MeleeZombie";
         break;
         
